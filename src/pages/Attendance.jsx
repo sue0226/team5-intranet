@@ -42,13 +42,13 @@ const GlobalStyle = createGlobalStyle`
 
 const Container = styled.div`
   position: relative;
-  min-height: 400px;
-  height: auto;
-  overflow-x: hidden;
   display: grid;
   grid-template-rows: 101px 101px minmax(200px, 1fr);
   grid-template-columns: 20% 20% 20% 20% 20%;
-  top: 15px;
+  height: auto;
+  min-height: 500px;
+  top: 20px;
+  overflow-x: hidden;
   padding: 10px 100px 50px 100px;
   margin: 0px 50px;
   background-color: #ffffff;

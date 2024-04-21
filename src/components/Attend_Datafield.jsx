@@ -29,6 +29,23 @@ const Datafield = ({ selectedLabel, results }) => {
         endDate = new Date(doc.data().startDate).toLocaleDateString("ko-KR");
       } else if (doc.data().endDate) {
         endDate = new Date(doc.data().endDate).toLocaleDateString("ko-KR");
+      }
+      else {
+        endDate = '미선택 '; 
+      }
+    
+      if (hdoOption == "(시간 선택)" || !startDate || endDate == "미선택 " || absenceOption == "사유 선택" || diffInDays < 1) {
+        status = '거절';
+      } else if (diffInDays <= 7) {
+        status = '승인';
+
+      if (
+        ["반차(오전)", "반차(오후)", "조퇴", "외출"].includes(absenceOption)
+      ) {
+        endDate = new Date(doc.data().startDate).toLocaleDateString("ko-KR");
+      } else if (doc.data().endDate) {
+        endDate = new Date(doc.data().endDate).toLocaleDateString("ko-KR");
+
       } else {
         endDate = "미선택 ";
       }

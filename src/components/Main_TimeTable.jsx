@@ -14,7 +14,7 @@ const Section = styled.div`
   width: 239px;
   height: 110.15px;
 
-  font-family: 'Pretendard, sans-serif';
+  font-family: 'Pretendard-Regular';
 `;
 
 const InfoContainer = styled.div`

@@ -41,7 +41,7 @@ const ModalContainer = styled.div`
 `;
 
 const TimeInfo = styled.h1`
-  font-family: 'Pretendard, sans-serif';
+  font-family: 'Pretendard-Regular';
   text-align: center;
   width: 339px;
   height: 58px;
